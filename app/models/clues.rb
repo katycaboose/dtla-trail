@@ -19,23 +19,24 @@ class Clues
       'tiny house' => "you are so close to the end of the game\nat this place we know the owner by name/nsmall, rank, and shady you’d/nthink it not ideal/nbut I l think it has fancy date appeal",
       'gregory' => "we followed French tourists across the city\nthat night even downtown looked pretty\nstanding beneath the shining moon\nwe shared our first kiss and I did swoon"
     }
-
-    def text_to_array
-      self.array_of_words = user_submitted_string.split('+').map(&:downcase)
-  	end
-
-    def array_counter
-  		self.array_of_words.each do |check|
-  			if @correct_answers.has_key?(check)
-  				@answer = @correct_answers[check]
-  				@last_correct_answer = check
-  			else
-  				@answer = "Incorrect. Re-enter your last correct answer or click home to start over."
-  		end
-  	end
   end
 
-  	def show_answer
-  		return @answer
+  def text_to_array
+    self.array_of_words = user_submitted_string.split('+').map(&:downcase)
+  end
+
+  def array_counter
+  	self.array_of_words.each do |check|
+  		if @correct_answers.has_key?(check)
+  			@answer = @correct_answers[check]
+  			@last_correct_answer = check
+  		else
+  			@answer = "Incorrect. Re-enter your last correct answer or click home to start over."
   	end
   end
+end
+
+  def show_answer
+  	return @answer
+  end
+end
