@@ -8,7 +8,6 @@ class StaticPagesController < ApplicationController
     	@response = @string.show_answer
     end
   end
-end
 
   def help
   end
