@@ -2,19 +2,21 @@
   <h2>Welcome to the DTLA Trail, Alex</h2>
 
   <h3>This is the beginning of your journey back to your party.</h3>
-  <p>Use the clues to navigate to each destination.\nThere will be red envelopes in each location containing a question.The correct answer to each question will unlock the next clue.\nAny wrong answers will weaken your player.\nIf you reach the end of your journey you will be reunited with your party.
-  <br />Write down your answers in order so if you get a wrong answer you can always see the last question.</p>
+  <p>Use the clues to navigate to each destination.
+  <br />There will be orange envelopes in each location containing a question.
+  <br />The correct answer to each question will unlock the next clue.
+  <br /> If you reach the end of your journey you will be reunited with your party.</p>
   <p>
     <%= @first_question %>
+  </p>
+  <p>
+    <%= simple_format @response %>
   </p>
   <p>
   	<form action="<%= root_path %>" method="get">
   		<%= label_tag %>
   		<%= text_field_tag :answer, params[:answer] %>
-  		<%= submit_tag "Check Answer", :name => nil %>
+  		<%= submit_tag "Submit Answer", :name => nil %>
   	</form>
-  </p>
-  <p>
-    <%= @response %>
   </p>
 </div>
