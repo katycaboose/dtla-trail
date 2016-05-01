@@ -8,7 +8,7 @@ class Clues
     @correct_answers = {
       'alexandre henri schmitt' => "you headed back from lunch with Ted,\n ditched the elevator and found me instead\nthis is the place where it all began,\nI couldn’t just leave it, so it’s with the doorman",
       'horse thief' => "8 minutes is what it did take\nto get to here with a quick gait\neach day we head a special route\nand use this exclusive service chute",
-      'raj' => "you play when you get the chance\nsometimes in the man with gnome pants\nit can be far from tame\ntests pass while you have a game",
+      'raj' => "you play when you get the chance\nsometimes against the man with gnome pants\nit can be far from tame\ntests pass while you have a game",
       'sunday' => "lunch is my favorite time of day\nespecially when we get to play\nwith Cindy we went to this place of treasure\ncheck in your bag for the next endeavor",
       'neil patrick harris' => "5th Street for your 5th clue\nback to the little cave we outgrew\nthink back to our first date\nand the little delicious hens we ate",
       'accent' => "sweat, stretch, shower, steam\nthat's now become the routine\n but with aching legs we walked the stairs\nto sit in the abandoned pool chairs",
